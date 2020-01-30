@@ -3,18 +3,25 @@
 //
 #include "lib.h"
 #include <map>
+#include <algorithm>
 class Solution {
 public:
-    int romanToInt(string const &s)
+    int romanToInt(string &s)
     {
-        for (char i : s)
+        std::transform(s.begin(), s.end(), s.begin(), toupper);
+        for (uint32_t i = 1; i < s.size();i++)
         {
-            result += Roman[i];
+            prev = Roman[s[i-1]];
+            if (prev < Roman[s[i]])
+                result+=Roman[s[i]]- 2*prev;
+            else
+                result += Roman[s[i]];
         }
-        return result;
+        return result+Roman[s[0]];
     }
 private:
     int result = 0;
+    int prev = 0;
     std::map <char,int> Roman = {{'M',1000},
                                  {'D',500},
                                  {'C',100},
