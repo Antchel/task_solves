@@ -9,15 +9,14 @@ public:
     int romanToInt(string &s)
     {
         std::transform(s.begin(), s.end(), s.begin(), toupper);
-        for (uint32_t i = 1; i < s.size();i++)
+        for (uint32_t i = 0; i < s.size();i++)
         {
-            prev = Roman[s[i-1]];
-            if (prev < Roman[s[i]])
-                result+=Roman[s[i]]- 2*prev;
+            if (Roman[s[i]] < Roman[s[i+1]])
+                result -= Roman[s[i]];
             else
                 result += Roman[s[i]];
         }
-        return result+Roman[s[0]];
+        return result;
     }
 private:
     int result = 0;
