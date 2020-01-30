@@ -6,7 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/anton/gitprj/task_to_solve/main.cpp
+/home/anton/gitprj/task_to_solve/lib.h
+string
+-
 iostream
 -
+
+/home/anton/gitprj/task_to_solve/main.cpp
+lib.h
+/home/anton/gitprj/task_to_solve/lib.h
 

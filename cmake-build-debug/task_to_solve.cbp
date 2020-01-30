@@ -84,6 +84,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/anton/gitprj/task_to_solve/lib.h">
+			<Option target="task_to_solve"/>
+		</Unit>
 		<Unit filename="/home/anton/gitprj/task_to_solve/main.cpp">
 			<Option target="task_to_solve"/>
 		</Unit>

@@ -1,9 +1,14 @@
 //
-// Created by anton on 30.01.2020.
+// Roman to integer translation
 //
-#include <iostream>
-using std::cout;
-using std::endl;
+#include "lib.h"
+class Solution {
+public:
+    int romanToInt(string s) {
+
+    }
+};
+
 int main ()
 {
     cout << "Initial commit"<<endl;
