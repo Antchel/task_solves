@@ -3,41 +3,41 @@
 //
 #include "lib.h"
 #include <map>
+#include <vector>
 #include <algorithm>
+using std::vector;
 class Solution {
-public:
-    int romanToInt(string &s)
-    {
-        std::transform(s.begin(), s.end(), s.begin(), toupper);
-        for (uint32_t i = 0; i < s.size();i++)
-        {
-            if (Roman[s[i]] < Roman[s[i+1]])
-                result -= Roman[s[i]];
-            else
-                result += Roman[s[i]];
+        public:
+        int oddCells(const int n,const int m, vector<vector<int>>& indices) {
+            int **matrix = new int* [m];
+            for (uint8_t i = 0; i < n; i++)
+            {
+                matrix[i] = new int [n];
+            }
+            for (uint8_t i = 0; i < n; i++)
+            {
+                for (uint8_t j = 0; j < m; j++)
+                {
+                    matrix [i][j] = rand()%20;
+                }
+            }
+            for (uint8_t i = 0; i < n; i++)
+            {
+                for (uint8_t j = 0; j < m; j++)
+                {
+                    cout << matrix [i][j] << '\t';
+                }
+                cout <<endl;
+            }
+            return 5;
         }
-        return result;
-    }
-private:
-    int result = 0;
-    int prev = 0;
-    std::map <char,int> Roman = {{'M',1000},
-                                 {'D',500},
-                                 {'C',100},
-                                 {'L',50},
-                                 {'X',10},
-                                 {'V',5},
-                                 {'I',1},
-                                 };
 };
 
 int main ()
 {
-    uint32_t IntNum;
-    string RomanNum;
-    Solution translateToint;
-    cin >> RomanNum;
-    IntNum = translateToint.romanToInt(RomanNum);
-    cout << "Roman " << RomanNum <<  " euqal is "<< IntNum << endl;
+    vector<vector<int>> indices1 = {{0,1},
+                                    {1,2}};
+    Solution odd;
+    odd.oddCells(5,4,indices1);
     return EXIT_SUCCESS;
 }
