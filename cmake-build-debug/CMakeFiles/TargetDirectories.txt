@@ -1,3 +1,3 @@
+/home/anton/gitprj/task_to_solve/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/anton/gitprj/task_to_solve/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /home/anton/gitprj/task_to_solve/cmake-build-debug/CMakeFiles/task_to_solve.dir
-/home/anton/gitprj/task_to_solve/cmake-build-debug/CMakeFiles/edit_cache.dir

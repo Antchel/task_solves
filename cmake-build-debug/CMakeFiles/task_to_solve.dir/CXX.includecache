@@ -7,18 +7,16 @@
 #IncludeRegexTransform: 
 
 /home/anton/gitprj/task_to_solve/lib.h
+iostream
+-
 string
 -
-iostream
+climits
+-
+limits
 -
 
 /home/anton/gitprj/task_to_solve/main.cpp
 lib.h
 /home/anton/gitprj/task_to_solve/lib.h
-map
--
-vector
--
-algorithm
--
 
