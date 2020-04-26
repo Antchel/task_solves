@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/task_to_solve.dir/main.cpp.o  -o task_to_solve 
+/usr/bin/c++  -g   CMakeFiles/task_to_solve.dir/main.cpp.o CMakeFiles/task_to_solve.dir/test_cases.cpp.o CMakeFiles/task_to_solve.dir/func.cpp.o  -o task_to_solve 

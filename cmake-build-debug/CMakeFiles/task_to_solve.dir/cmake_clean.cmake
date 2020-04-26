@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/task_to_solve.dir/func.cpp.o"
   "CMakeFiles/task_to_solve.dir/main.cpp.o"
+  "CMakeFiles/task_to_solve.dir/test_cases.cpp.o"
   "task_to_solve"
   "task_to_solve.pdb"
 )

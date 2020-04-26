@@ -123,6 +123,33 @@ task_to_solve/fast:
 	$(MAKE) -f CMakeFiles/task_to_solve.dir/build.make CMakeFiles/task_to_solve.dir/build
 .PHONY : task_to_solve/fast
 
+func.o: func.cpp.o
+
+.PHONY : func.o
+
+# target to build an object file
+func.cpp.o:
+	$(MAKE) -f CMakeFiles/task_to_solve.dir/build.make CMakeFiles/task_to_solve.dir/func.cpp.o
+.PHONY : func.cpp.o
+
+func.i: func.cpp.i
+
+.PHONY : func.i
+
+# target to preprocess a source file
+func.cpp.i:
+	$(MAKE) -f CMakeFiles/task_to_solve.dir/build.make CMakeFiles/task_to_solve.dir/func.cpp.i
+.PHONY : func.cpp.i
+
+func.s: func.cpp.s
+
+.PHONY : func.s
+
+# target to generate assembly for a file
+func.cpp.s:
+	$(MAKE) -f CMakeFiles/task_to_solve.dir/build.make CMakeFiles/task_to_solve.dir/func.cpp.s
+.PHONY : func.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -150,6 +177,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/task_to_solve.dir/build.make CMakeFiles/task_to_solve.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+test_cases.o: test_cases.cpp.o
+
+.PHONY : test_cases.o
+
+# target to build an object file
+test_cases.cpp.o:
+	$(MAKE) -f CMakeFiles/task_to_solve.dir/build.make CMakeFiles/task_to_solve.dir/test_cases.cpp.o
+.PHONY : test_cases.cpp.o
+
+test_cases.i: test_cases.cpp.i
+
+.PHONY : test_cases.i
+
+# target to preprocess a source file
+test_cases.cpp.i:
+	$(MAKE) -f CMakeFiles/task_to_solve.dir/build.make CMakeFiles/task_to_solve.dir/test_cases.cpp.i
+.PHONY : test_cases.cpp.i
+
+test_cases.s: test_cases.cpp.s
+
+.PHONY : test_cases.s
+
+# target to generate assembly for a file
+test_cases.cpp.s:
+	$(MAKE) -f CMakeFiles/task_to_solve.dir/build.make CMakeFiles/task_to_solve.dir/test_cases.cpp.s
+.PHONY : test_cases.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -159,9 +213,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... task_to_solve"
+	@echo "... func.o"
+	@echo "... func.i"
+	@echo "... func.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... test_cases.o"
+	@echo "... test_cases.i"
+	@echo "... test_cases.s"
 .PHONY : help
 
 
